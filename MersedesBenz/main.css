@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, black, grey, darkgrey, grey, black);
+}
+
+header h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+section {
+  background-size: 105% 105%;
+}
+
+.mainMav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: black;
+  color: white;
+}
+
+.mainNav .link {
+  margin-left: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mainNav .region {
+  display: flex;
+  width: 100px;
+  margin-left: 55vw;
+  color: white;
+  font-size: 15px;
+  background: black;
+}
+
+.link:hover {
+  transform: scale(1.2);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: black;
+  color: white;
+}
+
+.carsBlock {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+
+.carsBlock .amg {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(images/gelenvagen.jpg);
+  background-size: cover;
+  background-position: 20% 0%;
+  border: 5px solid black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.carsBlock .amg .subInfo,
+.carsBlock .maybach .subInfo {
+  max-width: 50vw;
+  height: 10vh;
+  margin: 0;
+  color: white;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carsBlock .amg:hover {
+  background-position: 10% 0%;
+}
+
+.carsBlock .maybach {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(images/maybach.jpg);
+  background-size: cover;
+  background-position: 30% 0%;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 5px solid black;
+}
+
+.carsBlock .maybach:hover {
+  background-position: 40% 0%;
+}
+
+.serviceBlock {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/mersedess_logo.jpg);
+  background-position: 60% 0%;
+}
+
+.serviceBlock .subInfo {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  font-size: 3vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.serviceBlock .subInfo li {
+  margin: 10px;
+}
+
+.serviceBlock .subInfo button {
+  margin-top: 40px;
+  margin: 3vh;
+  width: 30vw;
+  height: 5vh;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid wheat;
+  font-size: 20px;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.serviceBlock .subInfo button:hover {
+  transform: scale(1.1);
+}
+
+.contactsBlock {
+  width: 100vw;
+  height: 80vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+
+.contactsBlock .wrapper {
+  width: 70vw;
+  height: 50vh;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactsBlock .wrapper div {
+  width: 30vw;
+  height: 50vh;
+  border: 3px solid wheat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  transition: 0.3s;
+}
+.contactsBlock .wrapper div:hover {
+  transform: scale(1.05);
+}
+
+.contactsBlock .wrapper div button {
+  margin: 15px;
+  width: 250px;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid wheat;
+  font-size: 20px;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.historyBlock {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+}
+
+.historyBlock .item {
+  width: 33vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 5px solid black;
+  filter: grayscale(100%);
+}
+
+.historyBlock .old {
+  background-position: 80% 30%;
+  background-image: url("https://i.pinimg.com/564x/92/eb/76/92eb76fbaa35b60fba73c998c5ecf9b7.jpg");
+}
+
+.historyBlock .old:hover {
+  background-position: 90% 0%;
+  filter: none;
+}
+
+.historyBlock .novadays {
+  background-position: 40% 0%;
+  background-image: url("https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/e-class/saloon-w213-fl-copy/explore/specifications-teaser/_jcr_content/par/videoimageslider/slides/videoimageslide/image.MQ6.12.20200709103754.jpeg");
+}
+
+.historyBlock .novadays:hover {
+  background-position: 50% 0%;
+  filter: none;
+}
+
+.historyBlock .future {
+  background-position: 60% 0%;
+  background-image: url("https://pictures.topspeed.com/IMG/crop/202001/mercedes-vision-avtr-67_800x0w.jpg");
+}
+
+.historyBlock .future:hover {
+  background-position: 70% 0%;
+  filter: none;
+}
+
+.historyBlock .item .article {
+  max-width: 50vw;
+  height: 10vh;
+  margin: 0;
+  transition: 0.3s;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.historyBlock .item .article button {
+  height: 30px;
+  width: 70px;
+  margin: 30px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid wheat;
+  font-size: 20px;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
